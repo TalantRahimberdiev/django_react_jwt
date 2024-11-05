@@ -7,7 +7,6 @@ class CustomUserSerializer(serializers.ModelSerializer):
         model = CustomUser
         fields = ("id", "username", "email")
 
-
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password1 = serializers.CharField(write_only=True)
     password2 = serializers.CharField(write_only=True)

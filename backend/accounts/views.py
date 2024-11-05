@@ -20,7 +20,6 @@ class UserRegistrationAPIView(GenericAPIView):
                           "access": str(token.access_token)}
         return Response(data, status= status.HTTP_201_CREATED)
 
-
 class UserLoginAPIView(GenericAPIView):
     permission_classes = (AllowAny,)
     serializer_class = UserLoginSerializer
